@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\TasksController;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,6 +12,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TasksListsController@index');
+
+Route::resource('list', 'TasksListsController');
+Route::resource('task', 'TaskController');
