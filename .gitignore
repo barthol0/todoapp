@@ -4,6 +4,7 @@
 /storage/*.key
 /vendor
 /.vagrant
+/phpMyAdmin
 .env
 .phpunit.result.cache
 Homestead.json
